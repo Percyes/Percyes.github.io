@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 septiembre XD</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content:space-evenly;
+            background: url('imagen/fondo.png') no-repeat center center/cover;
+        }
+        h1, h2 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            text-align: center;
+            font-family: algerian;
+        }
+
+        h1 {
+            font-size: 3vw;
+            animation: fadeInOut 3s infinite; /* Animación suave */
+        }
+
+        h2 {
+            font-size: 3vw;
+            margin-top: 20px;
+            animation: pulse 2s infinite; /* Pequeño efecto de pulsación */
+        }
+        button{
+            margin-left: 50%;
+            transform: translateX(-50%);
+            --glow-color:rgb(217, 176, 255);
+            --glow_spread_color:rgba(191, 123, 255, 0.781);
+            --enhanced-glow-color:rgb(231, 206, 255);
+            --btn-color:rgb(100 61, 136);
+            border: .25em solid var(--glow-color);
+            padding: 1em 3em;
+            color:var(--glow-color);
+            font-size:15px;
+            font-weight:bold;
+            background-color:var(--btn-color);
+            border-radius:1em;
+            outline:none;
+            box-shadow: 0 0 1em .25em var(--glow-color), 
+                0 0 4em var(--glow_spread_color), 
+                inset 0 0 .75em .25em var(--glow-color);
+            text-shadow:0 0 .5em var(--glow-color);
+            position: relative;
+            transition: all 0.3s;
+        }
+        button:hover{
+            color: var(--glow-color);
+            background-color: var(--glow-color);
+            box-shadow: 0 0 1em .25em var(--glow-color), 
+            0 0 4em 2em var(--glow_spread_color), 
+            inset 0 0 .75em .25em var(--glow-color);
+        }
+        button:active{
+            box-shadow: 0 0 0 .6em .25em var(--glow-color), 
+            0 0 2 .5em 2em var(--glow_spread_color), 
+            inset 0 0 .5em .2em var(--glow-color);
+        }
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+                <h1>FELIZ DIA DEL AMOR Y LA AMISTAD</h1>
+                <h1>POR QUE TU SIENTES AMOR Y YO SOLO AMISTAD :v</h1>
+                <h2>VALORALO ME COSTO COPIAR Y EDITAR CODIGO XD</h2>
+                <button onclick="window.location.href='opcion_1.html'">AVER LAS FLORES :V</button><br><br>
+                <button onclick="window.location.href='opcion_2.html'"> :V</button>
+    </div>
+</body>
+</html>
